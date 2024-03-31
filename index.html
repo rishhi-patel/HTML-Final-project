@@ -13,43 +13,64 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </head>
   <body>
-    <header>
-      <div class="header-content">
-        <h1>Student Grade Tracker</h1>
-        <nav class="main-nav">
+    <div>
+      <div class="sidebar">
+        <div class="profile-info">
+          <img
+            src="profile-pic.jpg"
+            alt="Profile Picture"
+            class="profile-pic"
+          />
+          <h3>Student Name</h3>
+        </div>
+        <nav class="sidebar-nav">
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Add Grades</a></li>
+            <li><a href="#">View Grades</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Log Out</a></li>
           </ul>
         </nav>
       </div>
-    </header>
+    </div>
+    <div class="main-section">
+      <header>
+        <div class="header-content">
+          <h1>Student Grade Tracker</h1>
+          <nav class="main-nav">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
 
-    <aside class="sidebar">Sidebar content</aside>
-    <main>
-      <div class="grid-container">
-        <div class="grid-item">
-          <h3>Math Grades Over Time</h3>
-          <canvas id="line-chart"></canvas>
+      <main>
+        <div class="grid-container">
+          <div class="grid-item">
+            <h3>Math Grades Over Time</h3>
+            <canvas id="line-chart"></canvas>
+          </div>
+          <div class="grid-item">
+            <h3>Grade Distribution by Category</h3>
+            <canvas id="pie-chart"></canvas>
+          </div>
+          <div class="grid-item">
+            <h3>Performance in Science</h3>
+            <canvas id="bar-chart"></canvas>
+          </div>
+          <div class="grid-item">
+            <h3>Grades Table</h3>
+            <table id="grades-table"></table>
+          </div>
         </div>
-        <div class="grid-item">
-          <h3>Grade Distribution by Category</h3>
-          <canvas id="pie-chart"></canvas>
-        </div>
-        <div class="grid-item">
-          <h3>Performance in Science</h3>
-          <canvas id="bar-chart"></canvas>
-        </div>
-        <div class="grid-item">
-          <h3>Grades Table</h3>
-          <table id="grades-table"></table>
-        </div>
-      </div>
-    </main>
+      </main>
 
-    <footer>Footer content</footer>
-
+      <footer>Footer content</footer>
+    </div>
     <script src="scripts/script.js"></script>
   </body>
 </html>

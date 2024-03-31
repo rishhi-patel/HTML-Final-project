@@ -5,7 +5,7 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   min-height: 100vh;
 }
 
@@ -17,35 +17,76 @@ footer {
   padding: 1rem 0;
 }
 
-nav ul {
-  list-style: none;
+header {
+  background-color: #007bff;
+  color: white;
+  padding: 20px 40px;
+  width: calc(100vw - 200px);
+  margin-left: auto;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-nav ul {
+  list-style-type: none;
+  display: flex;
   padding: 0;
 }
 
-nav ul li {
-  display: inline-block;
-  margin-right: 10px;
+.main-nav ul li {
+  margin-left: 20px;
 }
 
-nav ul li a {
-  color: white;
+.main-nav ul li a {
   text-decoration: none;
+  color: white;
 }
 
-.dropdown {
-  display: none;
-  position: absolute;
+.main-nav ul li a:hover {
+  text-decoration: underline;
+}
+.sidebar {
+  background-color: #f0f2f7;
+  padding: 20px;
+  height: 100%;
 }
 
-nav ul li:hover .dropdown {
+.profile-info {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.sidebar-nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar-nav ul li {
+  padding: 10px;
+  margin-bottom: 2px;
+  background-color: #e7e9ed;
+  border-radius: 5px;
+}
+
+.sidebar-nav ul li a {
+  text-decoration: none;
+  color: #333;
   display: block;
 }
 
-.sidebar {
-  background-color: #f4f4f4;
-  padding: 20px;
-  width: 200px;
-  position: absolute;
+.sidebar-nav ul li:hover {
+  background-color: #d1d4da;
 }
 
 main {
