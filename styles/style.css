@@ -177,6 +177,9 @@ tr:hover {
 }
 
 @media (max-width: 500px) {
+  main {
+    width: 100%;
+  }
   header {
     width: 100%;
   }
