@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header,
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+}
+
+nav ul li:hover .dropdown {
+  display: block;
+}
+
+.sidebar {
+  background-color: #f4f4f4;
+  padding: 20px;
+  width: 200px;
+  position: absolute;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+  margin-left: 200px;
+}
+
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.grid-item {
+  flex: 1 1 200px; /* Grow to fill space, don't shrink, base width of 200px */
+  margin: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  background-color: #fff;
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #007bff;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  th,
+  td {
+    padding: 8px;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .grid-item {
+    flex-basis: 100%; /* Full width on small screens */
+  }
+}
+
+@media (max-width: 500px) {
+  .sidebar {
+    position: relative;
+    width: 100%;
+  }
+  main {
+    margin-left: 0;
+  }
+  nav ul li {
+    display: block;
+  }
+}

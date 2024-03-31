@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Grade Tracker</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <h1>Student Grade Tracker</h1>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <aside class="sidebar">Sidebar content</aside>
+    <main>
+      <div class="grid-container">
+        <div class="grid-item">
+          <h3>Math Grades Over Time</h3>
+          <canvas id="line-chart"></canvas>
+        </div>
+        <div class="grid-item">
+          <h3>Grade Distribution by Category</h3>
+          <canvas id="pie-chart"></canvas>
+        </div>
+        <div class="grid-item">
+          <h3>Performance in Science</h3>
+          <canvas id="bar-chart"></canvas>
+        </div>
+        <div class="grid-item">
+          <h3>Grades Table</h3>
+          <table id="grades-table"></table>
+        </div>
+      </div>
+    </main>
+
+    <footer>Footer content</footer>
+
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
