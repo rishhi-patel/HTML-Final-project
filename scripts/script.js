@@ -1,5 +1,9 @@
 $(document).ready(function () {
-  // Adjusted path to point to the 'data' folder
+  $(document).ready(function () {
+    $(".hamburger-menu").click(function () {
+      $(".sidebar").toggleClass("active")
+    })
+  })
   $.getJSON("data/grades.json", function (data) {
     // Initialize the line chart with Math grades
     var ctxLine = document.getElementById("line-chart").getContext("2d")
