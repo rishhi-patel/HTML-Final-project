@@ -17,8 +17,8 @@ $(document).ready(function () {
 })
 
 function initializeLineChart(MathProgress) {
-  var ctxLine = document.getElementById("line-chart").getContext("2d")
-  var lineChart = new Chart(ctxLine, {
+  let ctxLine = document.getElementById("line-chart").getContext("2d")
+  let lineChart = new Chart(ctxLine, {
     type: "line",
     data: {
       labels: MathProgress.labels,
@@ -44,8 +44,8 @@ function initializeLineChart(MathProgress) {
 }
 
 function initializeBarChart(ScienceExperiments) {
-  var ctxBar = document.getElementById("bar-chart").getContext("2d")
-  var barChart = new Chart(ctxBar, {
+  let ctxBar = document.getElementById("bar-chart").getContext("2d")
+  let barChart = new Chart(ctxBar, {
     type: "bar",
     data: {
       labels: ScienceExperiments.labels,
@@ -71,8 +71,8 @@ function initializeBarChart(ScienceExperiments) {
 }
 
 function initializePieChart(ClassGradeDistribution) {
-  var ctxPie = document.getElementById("pie-chart").getContext("2d")
-  var pieChart = new Chart(ctxPie, {
+  let ctxPie = document.getElementById("pie-chart").getContext("2d")
+  let pieChart = new Chart(ctxPie, {
     type: "pie",
     data: {
       labels: Object.keys(ClassGradeDistribution),
@@ -110,7 +110,7 @@ function initializePieChart(ClassGradeDistribution) {
 }
 
 function populateGradesTable(students) {
-  var gradesTable = $("#grades-table")
+  let gradesTable = $("#grades-table")
   gradesTable.append("<tr><th>Name</th><th>Student ID</th><th>Grade</th></tr>")
 
   $.each(students, function (index, student) {
