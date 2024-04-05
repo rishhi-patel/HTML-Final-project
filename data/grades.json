@@ -45,12 +45,32 @@
         }
     },
     "tableData": {
-        "HistoryEssays": {
-            "RishiKumar Patel": 85,
-            "Sumit Shrestha": 78,
-            "Alisha Alisha": 92,
-            "Essay 4": 88,
-            "Final Essay": 94
-        }
+        "students": [
+            {
+                "name": "Rishikumar Patel",
+                "studentID": "8972657",
+                "grade": 85
+            },
+            {
+                "name": "Sumit Shrestha",
+                "studentID": "8972657",
+                "grade": 78
+            },
+            {
+                "name": "Alisha Alisha",
+                "studentID": "8972657",
+                "grade": 92
+            },
+            {
+                "name": "Student",
+                "studentID": "S004",
+                "grade": 62
+            },
+            {
+                "name": "Another Student",
+                "studentID": "S005",
+                "grade": 61
+            }
+        ]
     }
 }

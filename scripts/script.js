@@ -94,11 +94,17 @@ $(document).ready(function () {
       },
     })
 
-    // Populate a table with History essay grades
+    // Populate a table with student grades
     var gradesTable = $("#grades-table")
-    gradesTable.append("<tr><th>Essay</th><th>Grade</th></tr>") // Header
-    $.each(data.tableData.HistoryEssays, function (essay, grade) {
-      gradesTable.append(`<tr><td>${essay}</td><td>${grade}</td></tr>`)
+    gradesTable.append(
+      "<tr><th>Name</th><th>Student ID</th><th>Grade</th></tr>"
+    ) // Header
+
+    // Loop through each student in the array
+    $.each(data.tableData.students, function (index, student) {
+      gradesTable.append(
+        `<tr><td>${student.name}</td><td>${student.studentID}</td><td>${student.grade}</td></tr>`
+      )
     })
   })
 })
