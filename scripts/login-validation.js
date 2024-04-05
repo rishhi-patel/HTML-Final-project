@@ -28,3 +28,30 @@ $(document).ready(function () {
     window.location.href = "/index.html"
   })
 })
+
+// script.js
+const slogans = [
+  "Unlock Your Potential.",
+  "Empowering the Next Generation.",
+  "Innovation in Learning.",
+]
+
+let index = 0
+let count = 0
+let currentText = ""
+let letter = ""
+
+;(function type() {
+  if (count === slogans.length) {
+    count = 0
+  }
+  currentText = slogans[count]
+  letter = currentText.slice(0, ++index)
+
+  document.querySelector("#typewriter").textContent = letter
+  if (letter.length === currentText.length) {
+    count++
+    index = 0
+  }
+  setTimeout(type, 100)
+})()
