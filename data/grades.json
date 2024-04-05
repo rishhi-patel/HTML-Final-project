@@ -1,32 +1,56 @@
 {
-    "grades": {
-        "Math": [
-            88,
-            92,
-            76,
-            88,
-            90
-        ],
-        "Science": [
-            92,
-            90,
-            85,
-            88,
-            95
-        ],
-        "History": [
-            80,
-            82,
-            78,
-            85,
-            88
-        ]
+    "lineChartData": {
+        "MathProgress": {
+            "labels": [
+                "September",
+                "October",
+                "November",
+                "December",
+                "January"
+            ],
+            "scores": [
+                75,
+                80,
+                65,
+                90,
+                75
+            ]
+        }
     },
-    "gradeDistribution": {
-        "A": 5,
-        "B": 10,
-        "C": 7,
-        "D": 2,
-        "F": 1
+    "pieChartData": {
+        "ClassGradeDistribution": {
+            "Excellent": 12,
+            "Good": 25,
+            "Average": 40,
+            "Below Average": 18,
+            "Poor": 5
+        }
+    },
+    "barChartData": {
+        "ScienceExperiments": {
+            "labels": [
+                "Experiment 1",
+                "Experiment 2",
+                "Experiment 3",
+                "Experiment 4",
+                "Experiment 5"
+            ],
+            "scores": [
+                80,
+                70,
+                90,
+                100,
+                85
+            ]
+        }
+    },
+    "tableData": {
+        "HistoryEssays": {
+            "RishiKumar Patel": 85,
+            "Sumit Shrestha": 78,
+            "Alisha Alisha": 92,
+            "Essay 4": 88,
+            "Final Essay": 94
+        }
     }
 }

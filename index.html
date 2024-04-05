@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Student Grade Tracker</title>
+    <title>Grades</title>
     <link rel="stylesheet" href="styles/style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
@@ -31,16 +31,16 @@
               />
             </svg>
           </div>
-          <img src="images/rishhi.jpeg" alt="pic" class="profile-pic" />
-          <h3>Rishi Patel</h3>
+          <img src="images/student.webp" alt="pic" class="profile-pic" />
+          <h3>Student - 8972XXX</h3>
         </div>
         <nav class="sidebar-nav">
           <ul>
             <li><a href="#">Dashboard</a></li>
-            <li><a href="#">Add Grades</a></li>
-            <li><a href="#">View Grades</a></li>
+            <li><a href="#">Exam Results</a></li>
+            <li><a href="#">Fees</a></li>
             <li><a href="#">Settings</a></li>
-            <li><a href="#">Log Out</a></li>
+            <li><a href="/login.html">Log Out</a></li>
           </ul>
         </nav>
       </div>
@@ -63,11 +63,20 @@
                   />
                 </svg>
               </div>
-              <h1>Student Grade Tracker</h1>
+              <h1>Grades</h1>
               <nav class="main-nav">
                 <ul>
                   <li><a href="#">Home</a></li>
                   <li><a href="#">About</a></li>
+                  <!-- Dropdown menu item -->
+                  <li class="dropdown">
+                    <a href="#">Courses</a>
+                    <ul class="dropdown-content">
+                      <li><a href="#">Mathematics</a></li>
+                      <li><a href="#">Science</a></li>
+                      <li><a href="#">History</a></li>
+                    </ul>
+                  </li>
                   <li><a href="#">Contact</a></li>
                 </ul>
               </nav>
@@ -88,7 +97,7 @@
               <canvas id="bar-chart"></canvas>
             </div>
             <div class="grid-item">
-              <h3>Grades Table</h3>
+              <h3>History Grades Table</h3>
               <table id="grades-table"></table>
             </div>
           </div>
