@@ -17,15 +17,6 @@
             ]
         }
     },
-    "pieChartData": {
-        "ClassGradeDistribution": {
-            "Excellent": 12,
-            "Good": 25,
-            "Average": 40,
-            "Below Average": 18,
-            "Poor": 5
-        }
-    },
     "barChartData": {
         "ScienceExperiments": {
             "labels": [
@@ -42,6 +33,15 @@
                 100,
                 85
             ]
+        }
+    },
+    "pieChartData": {
+        "ClassGradeDistribution": {
+            "Excellent": 12,
+            "Good": 25,
+            "Average": 40,
+            "Below Average": 18,
+            "Poor": 5
         }
     },
     "tableData": {
