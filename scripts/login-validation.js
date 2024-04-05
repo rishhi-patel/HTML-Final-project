@@ -1,23 +1,19 @@
+//fields validations
 $(document).ready(function () {
   $("#loginForm").submit(function (e) {
-    e.preventDefault() // Prevent form submission for demonstration
+    e.preventDefault()
 
-    var email = $("#email").val().trim()
-    var password = $("#password").val().trim()
-
-    // Regular expression for email validation
-    var emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/
-    // Regular expression for password validation
-    var passwordRegex =
+    let email = $("#email").val().trim()
+    let password = $("#password").val().trim()
+    let emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/
+    let passwordRegex =
       /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/
 
-    // Email validation
     if (!emailRegex.test(email)) {
       alert("Please enter a valid email address.")
       return
     }
 
-    // Password validation
     if (!passwordRegex.test(password)) {
       alert(
         "Password must be at least 8 characters long and include at least one uppercase letter, one number, and one special character."
@@ -29,7 +25,7 @@ $(document).ready(function () {
   })
 })
 
-// script.js
+//animation
 const slogans = [
   "Unlock Your Potential.",
   "Empowering the Next Generation.",

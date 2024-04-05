@@ -1,3 +1,4 @@
+// JQuery example
 $(document).ready(function () {
   $(".hamburger-menu").click(function () {
     $(".sidebar").toggleClass("active")
